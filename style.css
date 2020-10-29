@@ -1,0 +1,689 @@
+@font-face { 
+    font-family: jetbrains_monoregular;
+    src: url(assest/font/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+@font-face { 
+    font-family: jetbrains_monomedium;
+    src: url(assest/font/JetBrainsMono-Medium.ttf);
+}
+
+@font-face { 
+    font-family: scientist;
+    src: url(assest/font/TheScientist-L3EyW.ttf);
+}
+
+@font-face { 
+    font-family: jetbrains_monolight;
+    src: url(assest/font/JetBrainsMono-Light.woff);
+}
+
+@font-face { 
+    font-family: threefonte;
+    src: url(assest/font/Threefonte-2Ovw8.otf );
+}
+  
+*{
+    box-sizing: border-box;
+    font-family: jetbrains_monoregular;
+}
+
+body{
+    background-color:#ECF0F3;
+    color: #193566;
+    width: 85vw;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+/*-------- Header Menu --------*/
+.header{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 50px 0 100px 0;
+    cursor: pointer;
+}
+
+.circle .text{
+    font-size: 20px;
+    font-family: scientist;
+    font-weight: bolder;
+}
+
+.menu{
+    margin: 100px 0 150px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #193566;
+    font-size: 18px;
+    margin-left: 75px;
+}
+
+.hover-effect:hover{
+    background-color: #F8EC41;
+}
+
+/*-------- Main Content --------*/
+.main-content{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.image-holder{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.location-icon{
+    width: 20px;
+}
+
+.image-content{
+    width: 50%;
+    margin-left: -300px;
+}
+
+/*-------- Headline Content --------*/
+.heading-page{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.heading-text{
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.heading-name{
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.highlight-text{
+    background-color: #F8EC41;
+    width: 550px;
+    height: 50px;
+    margin: -50px 0 35px 25px;
+    mix-blend-mode: darken;
+}
+
+.headline{
+    font-size: 30px;
+}
+
+.threefont{
+    font-family: threefont;
+}
+
+
+/*-------- Tree Illustration --------*/
+.trees-illustration{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*-------- About-Container --------*/
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px auto;
+    width: 90%;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-para{
+    margin-top: 110px;
+    width: 50%;
+    font-size: 18px;
+    line-height: 2em;
+    word-spacing: 10px;
+}
+
+.color-red{
+    color: #E60104;
+}
+
+.color-black{
+    color: #000000;
+}
+
+.about-illustration{
+    text-align: center;
+    width: 50%;
+    margin-top: -75px;
+}
+
+.india{
+    width: 100%;
+}
+
+.rickshaw-holder{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -100px;
+    margin-left: -100px;
+    height: 100%;
+}
+
+/*-------- Projects --------*/
+.project-content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -110px;
+}
+
+.box-main{
+    width: 50%;
+}
+
+.box{
+    /* Basic styling and alignment */
+    border-radius:70px;
+    height: 400px;
+    /* For Neumorphism Effect */
+    background-color:#E0E5EC;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+        /* Other Neumorphisim effect for UP - 
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+        -8px -8px 12px 0 rgba(0, 0, 0, .25) inset; 
+    */
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box:hover{
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+        -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+}
+
+.shopping:hover{
+    background-image: url('/assest/picture/shopping-cart.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.incluvie:hover{
+    background-image: url('/assest/picture/incluvie.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.exmouth:hover{
+    background-image: url('/assest/picture/exmouth.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.face:hover{
+    background-image: url('/assest/picture/face.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.space{
+    margin-left: 100px;
+}
+
+.tech-used{
+    font-size: 18px;
+    padding-left: 30px;
+    font-family: jetbrains_monomedium;
+}
+
+.project-name-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: -60px;
+}
+
+.project-name{
+    font-size: 50px;
+    color: #193566;
+    margin: 0;
+    width: 340px;
+}
+
+.highlighter{
+    background-color: #F8EC41;
+    width: 260px;
+    height: 72px;
+    margin: -90px 0 35px 35px;
+    mix-blend-mode: darken;
+} 
+
+.more-project-link{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.link-text{
+    display: flex;
+    justify-content: center;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+/*-------- Education --------*/
+.education-work-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.education-work-header-holder{
+    margin: 60px 0;
+}
+
+.education-work-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education-work-box{
+    display: flex;
+    margin: 25px 30px;
+}
+
+.education-work-text{
+    margin-left: 15px;
+}
+
+.university-work-name{
+    font-family: jetbrains_monomedium;
+    font-size: 22.5px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.mu-logo{
+    margin-top: -25px;
+}
+
+.common-logo-edit{
+    margin-top: 1px;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 100px auto;
+    width: 90%;
+}
+
+.email-text{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.work-icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.space-around{
+    margin: auto 30px;
+}
+
+/*-------- Icons/Logo --------*/
+.circle{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E5EC;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}
+
+.icon{
+    width: 45px;
+}
+
+.footer{
+    margin: 20px auto;
+}
+
+.social-icon{
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1440px){
+    body{
+        background-color:#ECF0F3;
+        color: #193566;
+        width: 85vw;
+        margin: 0 auto;
+        border: 1px solid blue;
+    }
+
+    .image-content{
+        margin: 0;
+    }
+
+    .main-image-holder{
+        width: 80%;
+        height: auto;
+    }
+
+    .rickshaw-holder{
+        display: flex;
+    }
+
+    .box{
+        height: 350px;
+    }
+    
+    .exmouth{
+        margin-top: 22.5px;
+    }
+
+    .contact-info{
+        display: flex;
+        border: 1px solid red;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    
+    body{
+        width: 100vw;
+        border: 1px solid green;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        cursor: pointer;
+        margin: 85px auto 0 auto;
+    }
+
+    .header{
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0 60px 0;
+    }
+
+    a{
+        margin-left: 0px;
+        font-size: 13px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .heading-page{
+        width: 100%;
+    }
+
+    .heading-text{
+        font-size: 30px;
+    }
+
+    .heading-name{
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .highlight-text{
+        width: 270px;
+        height: 28px;
+        margin: -30px 0 0 15px;
+    }
+
+    .headline{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .location{
+        display: flex;
+        margin-top: 0;
+        font-size: 12px;
+        font-weight: lighter;
+        justify-content: center;
+    }
+
+    .location-icon{
+        width: 13px;
+    }
+
+    .image-content{
+        width: 100%;
+    }
+
+    .image-holder{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-image-holder{
+        width: 100%;
+    }
+
+    .tree{
+        height: 140px;
+    }
+
+    .about-container{
+        margin: 50px auto 0 auto;
+    }
+
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .about-para{
+        width: 100%;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .about-illustration{
+        width: 100%;
+        margin-top: -175px;
+    }
+
+    .rickshaw-holder{
+        display: flex;
+        justify-content: center;
+        margin: -150px 0 50px -50px;
+    }
+
+    .container{
+        flex-direction: column;
+        margin-left: 0px;
+        margin-left: -100px;
+
+    }
+    
+    .box-main{
+        width: 100%;
+    }
+
+    .box{
+        height: 210px;
+        width: 310px;
+        border-radius: 30px;
+    }
+
+    .tech-used{
+        font-size: 13px;
+        padding-left: 10px;
+    }
+
+    .project-name-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 80px;
+        margin-right: -40px;
+    }
+
+    .project-name{
+        font-size: 24px;
+        width: 160px;
+    }
+
+    .highlighter{
+        background-color:#F8EC41;
+        width: 150px;
+        height: 50px;
+        margin: -50px 0 70px 0px;
+        mix-blend-mode: darken;
+    } 
+
+    .more-project-link{
+        width: 100%;
+        margin: 25px auto 40px auto;
+    }
+
+    .link-text{
+        font-size: 12px;
+    }
+
+    .education-work-header-holder{
+        margin: 25px 0 0 0;
+    }
+
+    .university-work-name{
+        font-size: 17px;
+    }
+
+    .logo{
+        width: 75px;
+    }
+
+    .university-work-name{
+        font-family: jetbrains_monomedium;
+        font-size: 17px;
+    }
+
+    .education-work-box{
+        margin: 0;
+    }
+
+    .education-work-text{
+        margin-top: 50px;
+    }
+
+    .education-work-text > p{
+        font-size: 11px;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-adjust{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    .icon{
+        width: 28px;
+        height: 28px;
+    }
+
+    .work-icon{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .circle{
+        width: 60px;
+        height: 60px;        
+    }
+
+    .space-around{
+        margin: 35px 10px 0 10px;
+    }
+
+    .footer > p{
+        margin: 0;
+        font-size: 10px;
+    }
+    
+    .contact-container{
+        margin: 40px auto;
+    }
+}
