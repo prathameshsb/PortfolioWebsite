@@ -403,7 +403,6 @@ a{
         color: #193566;
         width: 85vw;
         margin: 0 auto;
-        border: 1px solid blue;
     }
 
     .image-content{
@@ -429,7 +428,6 @@ a{
 
     .contact-info{
         display: flex;
-        border: 1px solid red;
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
